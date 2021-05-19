@@ -1,0 +1,668 @@
+{
+	"info": {
+		"_postman_id": "b4e14838-98c7-415d-a377-e3b97d69a918",
+		"name": "osu_cs_492_asg1",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "List all business",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8000/business",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"business"
+					]
+				},
+				"description": "Design API"
+			},
+			"response": []
+		},
+		{
+			"name": "add the business",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"owner_id\": 1,\r\n        \"name\": \"added_store\",\r\n        \"addy\": \"77 sw 153th\",\r\n        \"city\": \"corvallis\",\r\n        \"state\": \"OR\",\r\n        \"zip\": \"97333\",\r\n        \"phone\": \"3424235363\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/business",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"business"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get the new business info",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"owner_id\": 1,\r\n        \"name\": \"added_store\",\r\n        \"addy\": \"77 sw 153th\",\r\n        \"city\": \"corvallis\",\r\n        \"state\": \"OR\",\r\n        \"zip\": \"97333\",\r\n        \"phone\": \"3424235363\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/business/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"business",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update store information",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"owner_id\": 1,\r\n        \"name\": \"edited_store\",\r\n        \"addy\": \"77 sw 153th\",\r\n        \"city\": \"corvallis\",\r\n        \"state\": \"OR\",\r\n        \"zip\": \"97333\",\r\n        \"phone\": \"3424235363\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/business/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"business",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Checked edited business",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"owner_id\": 1,\r\n        \"name\": \"added_store\",\r\n        \"addy\": \"77 sw 153th\",\r\n        \"city\": \"corvallis\",\r\n        \"state\": \"OR\",\r\n        \"zip\": \"97333\",\r\n        \"phone\": \"3424235363\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/business/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"business",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list business by user id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"owner_id\": 1,\r\n        \"name\": \"added_store\",\r\n        \"addy\": \"77 sw 153th\",\r\n        \"city\": \"corvallis\",\r\n        \"state\": \"OR\",\r\n        \"zip\": \"97333\",\r\n        \"phone\": \"3424235363\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/3/businesses",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"3",
+						"businesses"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove the business",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"owner_id\": 1,\r\n        \"name\": \"added_store\",\r\n        \"addy\": \"77 sw 153th\",\r\n        \"city\": \"corvallis\",\r\n        \"state\": \"OR\",\r\n        \"zip\": \"97333\",\r\n        \"phone\": \"3424235363\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/business/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"business",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list review by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"owner_id\": 1,\r\n        \"name\": \"added_store\",\r\n        \"addy\": \"77 sw 153th\",\r\n        \"city\": \"corvallis\",\r\n        \"state\": \"OR\",\r\n        \"zip\": \"97333\",\r\n        \"phone\": \"3424235363\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/review/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"review",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add review",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"b_id\": 1,\r\n    \"user_id\": 1,\r\n    \"star\": 5, \r\n    \"dollar\": 1,\r\n    \"write\": \"Fantastic food Final\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/review",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"review"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get the new review",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"b_id\": 1,\r\n    \"user_id\": 1,\r\n    \"star\": 5, \r\n    \"dollar\": 1,\r\n    \"write\": \"Fantastic food Final\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/review/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"review",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update the review",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"b_id\": 1,\r\n    \"user_id\": 1,\r\n    \"star\": 5, \r\n    \"dollar\": 1,\r\n    \"write\": \"Edited Fantastic food Final\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/review/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"review",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get edited review",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"b_id\": 1,\r\n    \"user_id\": 1,\r\n    \"star\": 5, \r\n    \"dollar\": 1,\r\n    \"write\": \"Fantastic food Final\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/review/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"review",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list review by user id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"b_id\": 1,\r\n    \"user_id\": 1,\r\n    \"star\": 5, \r\n    \"dollar\": 1,\r\n    \"write\": \"Fantastic food Final\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/1/reviews",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"1",
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove the reivew",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"b_id\": 1,\r\n    \"user_id\": 1,\r\n    \"star\": 5, \r\n    \"dollar\": 1,\r\n    \"write\": \"Fantastic food Final\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/review/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"review",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get picture by id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n    \"b_id\": 1,\r\n    \"user_id\": 1,\r\n    \"star\": 5, \r\n    \"dollar\": 1,\r\n    \"write\": \"Fantastic food Final\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/picture/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"picture",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add picture",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"b_id\": 2,\r\n        \"user_id\": 1,\r\n        \"p_name\" : \"Last_caputer2.jpg\",\r\n        \"p_desc\" : \"This is the description 2\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/picture",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"picture"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get the new picture",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:8000/picture/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"picture",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update the picture",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"b_id\": 2,\r\n        \"user_id\": 1,\r\n        \"p_name\" : \"Edited_caputer2.jpg\",\r\n        \"p_desc\" : \"This is the description 2\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/picture/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"picture",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get updated data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"b_id\": 2,\r\n        \"user_id\": 1,\r\n        \"p_name\" : \"Edited_caputer2.jpg\",\r\n        \"p_desc\" : \"This is the description 2\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/picture/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"picture",
+						"6"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list picture by user id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"b_id\": 2,\r\n        \"user_id\": 1,\r\n        \"p_name\" : \"Edited_caputer2.jpg\",\r\n        \"p_desc\" : \"This is the description 2\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/user/1/picture",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"user",
+						"1",
+						"picture"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "remove the picture",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "    {\r\n        \"b_id\": 2,\r\n        \"user_id\": 1,\r\n        \"p_name\" : \"Edited_caputer2.jpg\",\r\n        \"p_desc\" : \"This is the description 2\"\r\n    }"
+				},
+				"url": {
+					"raw": "http://localhost:8000/picture/6",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"picture",
+						"6"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

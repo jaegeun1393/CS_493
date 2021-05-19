@@ -1,0 +1,50 @@
+[
+    {
+    "id": 1,
+    "b_id": 1,
+    "user_id": 1,
+    "star": 5, 
+    "dollar": 1,
+    "write": "Fantastic food 1"
+    },
+    {
+    "id": 2,
+    "b_id": 2,
+    "user_id": 2,
+    "star": 5, 
+    "dollar": 1,
+    "write": "Fantastic food 2"
+    },
+    {
+    "id": 3,
+    "b_id": 3,
+    "user_id": 1,
+    "star": 3, 
+    "dollar": 1,
+    "write": "Fantastic food 3"
+    },
+    {
+    "id": 4,
+    "b_id": 1,
+    "user_id": 3,
+    "star": 4, 
+    "dollar": 2,
+    "write": "Fantastic food 4"
+    },
+    {
+    "id": 5,
+    "b_id": 4,
+    "user_id": 4,
+    "star": 3, 
+    "dollar": 1,
+    "write": "Fantastic food5"
+    },
+    {
+    "id": 6,
+    "b_id": 5,
+    "user_id": 1,
+    "star": 3, 
+    "dollar": 2,
+    "write": "Fantastic food 6"
+    }
+]

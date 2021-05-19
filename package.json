@@ -1,0 +1,27 @@
+{
+    "dependencies": {
+        "express": "^4.17.1",
+        "figlet": "^1.5.0"
+    },
+    "name": "java",
+    "version": "1.0.0",
+    "description": "Setting up a server with Node.js and Express",
+    "main": "main.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/jaegeun1393/Cloud_app_lecture-note.git"
+    },
+    "author": "jaegeun oh",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/jaegeun1393/Cloud_app_lecture-note/issues"
+    },
+    "homepage": "https://github.com/jaegeun1393/Cloud_app_lecture-note#readme",
+    "devDependencies": {
+        "nodemon": "^2.0.7"
+    }
+}

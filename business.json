@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "owner_id": 3,
+        "name": "Red Robin",
+        "addy": "777 sw 15th",
+        "city": "corvallis",
+        "state": "OR",
+        "zip": "97333",
+        "phone": "940384903"
+    },
+    {
+        "id": 2,
+        "owner_id": 1,
+        "name": "samsung",
+        "addy": "737 sw 13th",
+        "city": "corvallis",
+        "state": "OR",
+        "zip": "97333",
+        "phone": "390563232"
+    },
+    {
+        "id": 3,
+        "owner_id": 2,
+        "name": "apple",
+        "addy": "177 e 11th",
+        "city": "corvallis",
+        "state": "OR",
+        "zip": "97333",
+        "phone": "2465673677"
+    },
+    {
+        "id": 4,
+        "owner_id": 3,
+        "name": "banana",
+        "addy": "772 n 215th",
+        "city": "corvallis",
+        "state": "OR",
+        "zip": "97333",
+        "phone": "3454382174"
+    },
+    {
+        "id": 5,
+        "owner_id": 3,
+        "name": "mouse",
+        "addy": "77 w 153th",
+        "city": "corvallis",
+        "state": "OR",
+        "zip": "97333",
+        "phone": "346438235"
+    }
+]
