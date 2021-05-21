@@ -46,5 +46,13 @@
     "star": 3, 
     "dollar": 2,
     "write": "Fantastic food 6"
+    },
+        {
+    "id": 7,
+    "b_id": 5,
+    "user_id": 1,
+    "star": 3, 
+    "dollar": 2,
+    "write": "Fantastic food 6"
     }
 ]
