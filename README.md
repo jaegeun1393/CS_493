@@ -1,6 +1,6 @@
 # Assignment 1
 
-**Assignment due at 11:59pm on Monday 4/19/2010**<br/>
+**Assignment due at 11:59pm on Monday 4 /19/2010**<br/>
 **Demo due by 11:59pm on Monday 5/3/2021**
 
 The goals of this assignment are to have you practice designing a RESTful API from an application description, to begin implementing endpoints for the API you designed, and to containerize your API using Docker.  The assignment has a few different parts, which are outlined below.
